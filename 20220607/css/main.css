@@ -1,0 +1,40 @@
+body {
+    background-color: hsl(216, 100%, 80%);
+ 
+}
+
+.main-box{
+    display: flex;
+    justify-content: center;
+}
+
+.plastic{
+    display: flex;
+}
+
+.plastic-explain {
+    margin-top: 4rem;
+    background-color: #fff;
+    border:1px solid #fff; 
+    width: 28rem;
+    height: 22rem;
+    border-radius: 3rem;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-box p {
+    margin: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.plastic-img{
+    width: 15rem;
+    height: 12rem;
+}

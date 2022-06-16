@@ -1,6 +1,15 @@
-/* 기본 바디 컬러 */
-body {
-    background-color: hsl(216, 100%, 80%);
+/* 기본 설정 */
+:root{
+    --back-color: hsl(216, 100%, 80%);
+    --main-textcolor: hsl(0, 0%, 11%);
+}
+
+/* 기본 바디 설정 */
+body{
+    background: var(--back-color);
+    background-image: url('images/garbage.png');
+    background-position: 90% 5rem;
+    background-repeat: no-repeat;
 }
 
 /* 기본 설정 */
@@ -9,64 +18,51 @@ body {
     margin: 0;
     padding: 0;
 }
-  
 
 /* 플라스틱 설명, 이미지 */
-.main-box{
+.boons{
     display: flex;
-    justify-content: center;
 }
 
-.plastic{
-    display: flex;
-    align-items: center;
-}
-
-.plastic-explain {
-    margin-top: 4rem;
-    background-color: #fff;
-    border:1px solid #fff; 
-    width: 28rem;
-    height: 22rem;
-    border-radius: 3rem;
-}
-
-h2 {
-    margin-top: 2rem;
-    margin-left: 2.1rem;
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.main-box p {
-    margin: 2rem;
-    font-weight: 500;
-    line-height: 2rem;
-}
-
-.plastic-img{
+.logo-img{
+    width: 7rem;
+    height: 8rem;
     margin-top: 4rem;
     margin-left: 2rem;
-    width: 15rem;
-    height: 22rem;
 }
 
-/* 어떤 종류의 쓰레기인지 선택해주세요. */
-.question-p{
+.boons{
+    margin-left: 15%;
+    margin-top: 5rem;
+}
+.boons h2{
+    color: var(--main-textcolor);
+    text-shadow: 2px 2px 7px rgba(0,0,0,.3);
+    font-size: 9rem;
+    font-style: italic;
+    font-weight: 100;
+
+}
+
+/* 방법을 알려드릴게요! */
+.ex-p{
+    margin-top: .2rem;
     margin-left: 10%;
 }
 
-.question-p p{
+.ex-p p{
+    color: var(--main-textcolor);
     margin-top: 2rem;
     background-color: #fff;
     border:1px solid #fff; 
-    width: 18.8rem;
+    width: 28.6rem;
     border-radius: 3rem; 
     padding: 0.5rem;
     align-items: center;
     margin-left: 5rem;
-    font-size: 1rem;
+    font-size: 1.07rem;
     font-weight: bold;
+    font-style: italic;
 }
 
 /* header */
@@ -84,22 +80,23 @@ nav {
 nav i {
   color: #fff;
   font-size: 1.5rem; /* 아이콘 좀 크게 */
-  margin-left: 2.5rem;
 }
 
+/* swipe */
 .swiper-container {
-	height:250px;
-	border-radius:7px;
+    height:300px;
+    border-radius:7px;
     margin-top: auto;
-}
-.swiper-slide {
-	text-align:center;
+    margin-bottom: 0;
+ }
+ .swiper-slide {
+    text-align: center;
     display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
     align-items:center; /* 위아래 기준 중앙정렬 */
-	justify-content:center; /* 좌우 기준 중앙정렬 */
-}
-.swiper-slide img {
-	box-shadow:0 0 5px #555;
-	max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
-	/* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
-}
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+ }
+ .swiper-slide img {
+    box-shadow:0 0 5px #555;
+    max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+ }

@@ -1,0 +1,126 @@
+/* 기본 설정 */
+:root{
+    --back-color: hsl(216, 100%, 80%);
+    --main-textcolor: hsl(0, 0%, 11%);
+}
+/* 기본 바디 컬러 */
+body {
+    background-color: var(--back-color);
+}
+
+/* 기본 설정 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+/* 플라스틱 설명, 이미지 */
+.title{
+    display: flex;
+}
+
+
+
+.main-box{
+    display: flex;
+    justify-content: center;
+}
+
+.plastic{
+    display: flex;
+    align-items: center;
+}
+
+.plastic-explain {
+    color: var(--main-textcolor);
+    margin-top: 2rem;
+    background-color: #fff;
+    border:1px solid #fff; 
+    width: 27rem;
+    height: 20.8rem;
+    border-radius: 3rem;
+}
+
+h2 {
+    font-style: italic;
+    color: var(--main-textcolor);
+    margin-top: 2rem;
+    margin-left: 2.1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-box p {
+    margin-top: .3rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.plastic-img{
+    margin-top: 2rem;
+    margin-left: 3rem;
+    width: 15rem;
+    height: 20.8rem;
+}
+
+/* 어떤 종류의 쓰레기인지 선택해주세요. */
+.question-p{
+    margin-left: 10%;
+}
+
+.question-p p{
+    color: var(--main-textcolor);
+    margin-top: 1.5rem;
+    background-color: #fff;
+    border:1px solid #fff; 
+    width: 19.8rem;
+    border-radius: 3rem; 
+    padding: 0.5rem;
+    align-items: center;
+    margin-left: 5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* header */
+header {
+    background-color: hsl(216, 100%, 68%);
+}
+  
+nav {
+  height: 3rem;
+  display: flex; /* 기본값: 수평 방향 */
+  justify-content: center; /* 양쪽정렬 */
+  align-items: center; /* 교차축 가운데 */
+}
+  
+nav i {
+  color: #fff;
+  font-size: 1.5rem; /* 아이콘 좀 크게 */
+}
+
+/* swipe */
+.swiper-container {
+    height:300px;
+    border-radius:7px;
+    margin-top: auto;
+ }
+ .swiper-slide {
+    text-align: center;
+    display: flex; /* 내용을 중앙정렬 하기위해 flex 사용 */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+ }
+ .swiper-slide img {
+    box-shadow:0 0 5px #555;
+    max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+ }
+
+.title img{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}

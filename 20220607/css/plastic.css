@@ -22,13 +22,13 @@ body {
 }
 
 .plastic{
+    margin-top: 3%;
     display: flex;
     align-items: center;
 }
 
 .plastic-explain {
     color: var(--main-textcolor);
-    margin-top: 2rem;
     background-color: #fff;
     border:1px solid #fff; 
     width: 27rem;
@@ -52,7 +52,6 @@ h2 {
 }
 
 .plastic-img{
-    margin-top: 2rem;
     margin-left: 3rem;
     width: 15rem;
     height: 20.8rem;
@@ -60,19 +59,18 @@ h2 {
 
 /* 어떤 종류의 쓰레기인지 선택해주세요. */
 .question-p{
-    margin-left: 10%;
+    margin-left: 15%;
+    margin-top: 3%;
 }
 
 .question-p p{
     color: var(--main-textcolor);
-    margin-top: 1.5rem;
     background-color: #fff;
     border:1px solid #fff; 
     width: 18.8rem;
     border-radius: 3rem; 
     padding: 0.5rem;
     align-items: center;
-    margin-left: 5rem;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -96,9 +94,10 @@ nav i {
 
 /* swipe */
 .swiper-container {
-    height:300px;
+    display: flex;
+    height: 300px;
     border-radius:7px;
-    margin-top: auto;
+    margin-top: 3%;
  }
  .swiper-slide {
     text-align: center;
@@ -108,6 +107,56 @@ nav i {
  }
  .swiper-slide img {
     box-shadow:0 0 5px #555;
-    max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    border-radius: 2.5rem;
+    max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
     /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+ }
+
+ /* moblie */
+ @media screen and (max-width: 780px){
+    body{
+        background-position: 95% 10rem;
+        background-size: 65%;
+    }
+    .boons{
+        margin-left: 18%;
+        margin-top: 45%;
+    }
+    .boons h2{
+        font-size: 5rem;
+        margin-top: 3rem;
+    }
+    .logo-img{
+        width: 4.5em;
+        height: 5.3rem;
+        margin-top: 4.5rem;
+    }
+    .question-p {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+    }
+
+    .plastic-img{
+        display: none;
+    }
+
+    .swiper-container {
+        display: block;
+        height: 300px;
+        margin-top: 10%;
+     }
+     .swiper-slide {
+        display: none;
+     }
+     .swiper-button-next, .swiper-button-prev, .swiper-pagination{
+        display: none;
+     }
+     .swiper-slide img {
+        box-shadow:0 0 5px #555;
+        border-radius: 2.5rem;
+        max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+        /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+     }
+    
  }

@@ -8,7 +8,8 @@
 body{
     background: var(--back-color);
     background-image: url('images/garbage.png');
-    background-position: 90% 5rem;
+    background-size: 35%;
+    background-position: 90% 50%;
     background-repeat: no-repeat;
 }
 
@@ -18,6 +19,7 @@ body{
     margin: 0;
     padding: 0;
 }
+
 
 /* 플라스틱 설명, 이미지 */
 .boons{
@@ -32,10 +34,11 @@ body{
 }
 
 .boons{
-    margin-left: 15%;
-    margin-top: 5rem;
+    margin-top: 8%;
+    margin-left: 10%;
 }
-.boons h2{
+
+.boons h2 {
     color: var(--main-textcolor);
     text-shadow: 2px 2px 7px rgba(0,0,0,.3);
     font-size: 9rem;
@@ -45,12 +48,12 @@ body{
 }
 
 /* 방법을 알려드릴게요! */
-.ex-p{
-    margin-top: .2rem;
-    margin-left: 10%;
+.ex-p {
+    margin-top: 3%;
+    margin-left: 5%;
 }
 
-.ex-p p{
+.ex-p p {
     color: var(--main-textcolor);
     margin-top: 2rem;
     background-color: #fff;
@@ -82,12 +85,16 @@ nav i {
   font-size: 1.5rem; /* 아이콘 좀 크게 */
 }
 
+.ballon{
+    display: none;
+}
+
 /* swipe */
 .swiper-container {
-    height:300px;
+    display: flex;
+    height: 300px;
     border-radius:7px;
-    margin-top: auto;
-    margin-bottom: 0;
+    margin-top: 5%;
  }
  .swiper-slide {
     text-align: center;
@@ -97,6 +104,117 @@ nav i {
  }
  .swiper-slide img {
     box-shadow:0 0 5px #555;
-    max-width: 80%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    border-radius: 2.5rem;
+    max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
     /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+ }
+ .mobile-container {
+    display: none;
+ }
+
+ 
+
+ /* moblie */
+ @media screen and (max-width: 780px){
+    body{
+        background-position: 95% 10rem;
+        background-size: 65%;
+    }
+    .boons{
+        margin-left: 18%;
+        margin-top: 45%;
+    }
+    .boons h2{
+        font-size: 5rem;
+        margin-top: 3rem;
+    }
+    .logo-img{
+        width: 4.5em;
+        height: 5.3rem;
+        margin-top: 4.5rem;
+    }
+    .ex-p{
+        display: none;
+    }
+
+    .ballon {
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 10%;
+        width: 335px;
+        height: 90px;
+        background: #fff;
+        color: var(--main-textcolor);
+        border-radius: 100px;
+        padding: 1.2rem 1.2rem 1.2rem 1.2rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        font-style: italic;
+    }
+    .ballon:before {
+        content: "";
+        position: absolute;
+        top: 95px;
+        left: 40%;
+        width: 23px;
+        height: 23px;
+        background: #fff;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+    .ballon:after {
+        content: "";
+        position: absolute;
+        top: 120px;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+
+    .swiper-container {
+        display: none;
+        height: 300px;
+        margin-top: 10%;
+     }
+     .swiper-slide {
+        display: none;
+     }
+     .swiper-button-next, .swiper-button-prev, .swiper-pagination{
+        display: none;
+     }
+     .swiper-slide img {
+        box-shadow:0 0 5px #555;
+        border-radius: 2.5rem;
+        max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+        /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+     }
+
+     .mobile-container {
+        display: block;
+     }
+
+     .mobile-slide1 img {
+        width: 200px;
+        height: 200px;
+        margin-top: 20%;
+        float: left;
+        border-radius: 1rem;
+        margin-left: 13%;
+     }
+
+     .mobile-slide2 img {
+        width: 200px;
+        height: 200px;
+        margin-top: 10%;
+        float: left;
+        border-radius: 1rem;
+        margin-left: 13%;
+     }
+
  }

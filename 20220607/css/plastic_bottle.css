@@ -121,6 +121,10 @@ nav i {
     margin-top: 1rem;
 }
 
+.m-img {
+    display: none;
+}
+
 /* moblie */
 @media screen and (max-width: 780px){
     body{
@@ -167,5 +171,13 @@ nav i {
         max-width: 70%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
         /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
      }
-    
+
+     .m-img {
+        display: block;
+        display: flex;
+        width: 28rem;
+        height: 28rem;
+        margin: 2rem auto 0;
+        justify-content: center;
+    }
  }

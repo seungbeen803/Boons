@@ -125,6 +125,11 @@ nav i {
     display: none;
 }
 
+
+.mobile-wrapper{
+    display: none;
+}
+
 /* moblie */
 @media screen and (max-width: 780px){
     body{
@@ -179,5 +184,35 @@ nav i {
         height: 28rem;
         margin: 2rem auto 0;
         justify-content: center;
+    }
+
+    .mobile-container{
+        display: block;
+     }
+
+     .mobile-slide1 img {
+        width: 230px;
+        height: 230px;
+        margin-top: 5%;
+        column-gap: 1rem;
+        float: left;
+        border-radius: 1rem;
+        margin-left: 10%;
+     }
+
+     .mobile-slide2 img {
+        width: 230px;
+        height: 230px;
+        margin-top: 10%;
+        column-gap: 1rem;
+        float: left;
+        border-radius: 1rem;
+        margin-left: 10%;
+     }
+    .mobile-wrapper{
+        display: block;
+    }
+    .swiper-container{
+        display: none;
     }
  }

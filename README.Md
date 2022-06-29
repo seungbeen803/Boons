@@ -2,7 +2,7 @@
 
 분리수거 할 쓰레기를 알려주시면,
 방법을 알려드릴게요!
-https://seungbeen803.github.io/Boons/20220607/main.html
+<br>https://seungbeen803.github.io/Boons/20220607/main.html
 ## 프로젝트 설명
 ---
 "Boons"는 올바른 분리수거 방법을 간단하고 보기 편하게 만들어 사람들이 쉽게 찾아서 볼 수 있으며 사람들이 좀 더 올바른 분리수거를 할 수 있도록 도움주는
